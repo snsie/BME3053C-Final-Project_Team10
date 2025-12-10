@@ -59,4 +59,5 @@ Duration: 8 minutes (60,001 samples)
 - 📄 .gitignore # Specifies files/folders to exclude from version control
 - 📄 HRV_Analysis.ipynb # Main Jupyter notebook
 - 📄 README.md # Project documentation
+- 📄 app.py # Streamlit app for HRV analysis and stress estimation
 - 📄 requirements.txt # List of all Python dependencies needed to run the notebook
