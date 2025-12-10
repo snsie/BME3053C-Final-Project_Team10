@@ -19,12 +19,8 @@ This application is intended for biomedical researchers, clinicians, and develop
 
 1. With the notebook open in Codespaces, click “Run All” or run each cell individually.
 2. All required packages are pre-installed in Codespaces.
-If running locally:
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-2. Launch the notebook:
-jupyter notebook HRV_Analysis.ipynb
+If running locally, install dependencies first: pip install -r requirements.txt
+Then open the notebook using Jupyter: jupyter notebook HRV_Analysis.ipynb
 This project is notebook-based — there is no need for streamlit or a separate app runner.
 
 ## Usage Guide
