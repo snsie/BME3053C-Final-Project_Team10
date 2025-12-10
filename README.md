@@ -25,8 +25,8 @@ Then open the notebook using Jupyter: jupyter notebook HRV_Analysis.ipynb
 ### Streamlit Run Instruction
 
 This project includes a Streamlit interface to visualize and interact with the heart rate variability (HRV) analysis results.
-To launch the application, open a Codespcae terminal in the project directory and enter: streamlit run app.py.
-Once the app is running, a Local URL (typically http://localhost:8501) will appear in the terminal. Click or copy this address into your browser to open the app interface.
+1. To launch the application, open a Codespcae terminal in the project directory and enter: pip install -r requirements.txt and then streamlit run app.py.
+2. Once the app is running, a Local URL (typically http://localhost:8501) will appear in the terminal. Click or copy this address into your browser to open the app interface.
 
 ## Usage Guide
 
