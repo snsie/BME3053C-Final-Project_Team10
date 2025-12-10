@@ -1,37 +1,11 @@
-
 {
-  "name": "Copilot Codespace",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "forwardPorts": [
-    6080
-  ],
-  "waitFor": "onCreateCommand",
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "name": "Python 3 + Streamlit",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install streamlit pandas numpy matplotlib scipy",
   "customizations": {
-    "codespaces": {
-      "openFiles": []
-    },
     "vscode": {
-      "extensions": [
-        "ms-toolsai.jupyter",
-        "ms-python.python",
-        "github.copilot",
-        "github.copilot-chat",
-        "sumneko.lua",
-      ],
-      "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-      },
-      "tasks": [
-        {
-          "label": "Open Terminal",
-          "command": "workbench.action.terminal.new",
-          "type": "command",
-          "runAtStartup": true
-        }
-      ]
+      "extensions": ["ms-python.python"]
     }
-  }
+  },
+  "remoteUser": "vscode"
 }
