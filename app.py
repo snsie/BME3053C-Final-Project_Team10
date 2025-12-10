@@ -80,7 +80,7 @@ plot_signal(ppg_filtered[:1000], "Filtered PPG Signal (First 1000 Samples)")
 
 # Step 3: Detect Peaks (Full Signal)
 st.header("3. Peak Detection")
-peaks, _ = find_peaks(ppg_filtered, distance=int(fs * 0.5), prominence=0.5)
+peaks, _ = find_peaks(ppg_filtered, distance=int(fs * 0.5), prominence=0.05)
 plot_signal(ppg_filtered[:1000], "Detected Peaks in PPG (First 1000 Samples)", peaks[peaks < 1000])
 st.text(f"Total peaks detected: {len(peaks)}")
 
